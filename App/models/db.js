@@ -6,6 +6,9 @@ const process = require('process');
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.js')[env];
 const db = {};
+console.log(require(__dirname + '/../config/config.js'));
+console.log(process.env.DB_URL);
+console.log(process.env.NODE_ENV);
 
 const mongoUri = config.database_url;
 
